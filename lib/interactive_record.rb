@@ -51,7 +51,7 @@ class InteractiveRecord
   end
   
   def find_by_name(name)
-    
+    DB[:conn].execute("SELECT * FROM #{table_name_for_insert} ")
   end
     
     
